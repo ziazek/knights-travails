@@ -1,8 +1,8 @@
-# TITLE
+# Knight's Travails
 
 ## About
 
-Best of Ruby Quiz, Chapter #
+Best of Ruby Quiz, Chapter 10
 
 ## Requirements
 
