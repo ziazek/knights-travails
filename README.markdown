@@ -31,8 +31,9 @@ run `bundle install`
 ## Understanding the Question
 
 - Accept capital letters and downcase them.
+- Use a breadth-first search:
 - Find the nearest valid squares.
-- Save an array of visited squares so we don't revisit them. Anything that launches from a revisited square cannot be the shortest path.
+- Save an array of visited squares so we don't revisit them. *Anything that launches from a revisited square cannot be the shortest path.*
 - Repeat.
 - Once the end square matches, return the sequence of squares that got us there.
 
@@ -98,6 +99,10 @@ run `bundle install`
 ```
 
 ## Review
+
+Quite close to the author's solution.
+
+Attempted with RubyTree, but could not access the end-nodes directly, so it made the solution too complex. Sticking with simple Arrays works better.
 
 ## License
 

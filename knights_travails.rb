@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'pry-byebug'
-require 'tree'
 
 unless ARGV.size >= 2
   puts "Usage: #{$PROGRAM_NAME} START_POS(e.g. a8) END_POS *FORBIDDEN_POS"
