@@ -90,14 +90,13 @@ class Knight
   def add_next_moves
     new_lines = []
     # binding.pry
-    self.current_lines.each do |line|
+    current_lines.each do |line|
       square = line.last
       square.valid_moves(forbidden, visited_squares).each do |sq|
         new_line = line.dup << sq 
         new_lines << new_line
         visited_squares << sq.to_s
 
-        # binding.pry
         throw(:found, new_line) if sq.to_s == end_pos.to_s
         pretty_print(new_line)
       end
@@ -108,7 +107,7 @@ class Knight
 
   def pretty_print(path)
     print "[ "
-    print path.drop(1).map(&:to_s).join ', '
+    print path.drop(1).join ', '
     print " ]"
     puts
   end
